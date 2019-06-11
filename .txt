@@ -1,0 +1,29 @@
+WHEN IS THE REDUX USEFUL
+=in comolex data flows
+=inter component communication that do not have a parent child relationship
+=non hierachial data
+=many actions 
+=same data in many places
+=
+
+IMMUTABILTY 
+*Time travel debugging
+*undo/redo
+*turn off indivdual actions
+*play interactions back
+
+REDUCERS
+function myReducer(state,action){
+    //return new state based on action passed
+}
+
+it is like a grinder that takes in meat(state) turn the node to grind it(action)
+what comes out is new state
+pure function and should produce no side effects, calling it with same argument returns same value
+
+forbidden in REDUCERS
+*mutate arguments
+*perform side effects
+*call non pure functions
+
+reducers should return an updated copy of state ,redux will use that copy to update the store 
